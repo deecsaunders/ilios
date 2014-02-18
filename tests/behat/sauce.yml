@@ -8,7 +8,7 @@ default:
             default_session: saucelabs
             javascript_session: saucelabs
             saucelabs:
-                browser: "firefox"
+                browser: "internet explorer"
                 capabilities:
                     platform: "Windows 7"
-                    version: 26
+                    version: 9
