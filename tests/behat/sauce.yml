@@ -11,4 +11,4 @@ default:
                 browser: "internet explorer"
                 capabilities:
                     platform: "Windows 7"
-                    version: 10
+                    version: 8
