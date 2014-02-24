@@ -27,17 +27,12 @@ $viewsPath = getServerFilePath('views');
     <link rel="stylesheet" href="<?php echo appendRevision($viewsUrlRoot . "css/session-types.css"); ?>" media="all">
     <link rel="stylesheet" href="<?php echo appendRevision($viewsUrlRoot . "css/custom.css"); ?>" media="all">
 
-    <style type="text/css"></style>
-    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-
     <script type="text/javascript">
         var baseURL = "<?php echo $siteUrl; ?>/";
         var controllerURL = "<?php echo $controllerURL; ?>/";    // expose this to our javascript land
         var courseManagementURL = "<?php echo $courseManagementURL; ?>/";    // similarly...
         var learningMaterialsControllerURL = "<?php echo $learningMaterialsControllerURL; ?>/";    // ...
         var programManagementURL = "<?php echo $programManagementURL; ?>/";    // similarly...
-        var studentUserId = "<?php echo $user_id; ?>";        // similarly...
-
         var pageLoadedForStudent = true;
         var isCalendarView = false;
     </script>
