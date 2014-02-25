@@ -3,7 +3,7 @@
 default:
     extensions:
         Behat\MinkExtension\Extension:
-            base_url: https://localhost
+            base_url: https://localhost:8000
             default_session: goutte
             javascript_session: selenium2
             browser_name: 'firefox'
@@ -43,7 +43,7 @@ vagrant:
 travis:
     extensions:
         Behat\MinkExtension\Extension:
-            base_url: https://precise64
+            base_url: https://precise64:8000
             default_session: selenium2
             goutte:
                 guzzle_parameters:
