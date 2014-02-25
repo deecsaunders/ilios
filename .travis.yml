@@ -31,7 +31,6 @@ before_script:
   - sudo sed -i -e "/DocumentRoot/i\ServerName precise64" /etc/apache2/sites-available/default
   - sudo sed -i -e "s/443/8000/" /etc/apache2/sites-enabled/*
   - ls /etc/apache2/sites-enabled/*
-  - sudo grep 443 /etc/apache2/sites-enabled/*
   - sudo grep 8000 /etc/apache2/sites-enabled/*
   - "sudo /etc/init.d/apache2 restart"
 
