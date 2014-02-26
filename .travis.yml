@@ -30,6 +30,7 @@ before_script:
   - "sudo /usr/bin/find /etc/apache2/sites-enabled -! -type d -exec /bin/sed -i \"s,/var/www,${PWD}/web,g\" {} \\;"
   - sudo sed -i -e "/DocumentRoot/i\ServerName precise64" /etc/apache2/sites-available/default
   - sudo sed -i -e "s/443/8000/" /etc/apache2/sites-enabled/*
+  - sudo echo "Listen 8000" >> /etc/apache2/sites-enabled/000-default-ssl
   - ls /etc/apache2/sites-enabled/*
   - sudo cat /etc/apache2/sites-enabled/*
   - "sudo /etc/init.d/apache2 restart"
