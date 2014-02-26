@@ -12,7 +12,7 @@ Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTPS} !=on
-RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+RewriteRule ^.*$ https://%{SERVER_NAME}:8000%{REQUEST_URI} [R,L]
 
 #
 # Redirect requests for ilios2.php to ilios.php
